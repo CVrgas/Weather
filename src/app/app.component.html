@@ -1,0 +1,37 @@
+<div class="container" #container id="container">
+    <div class="search-box">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <input type="text" placeholder="Search Location" id="input">
+        <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
+    </div>
+    <div class="not-found" id="not-found">
+        <img src="../assets/5203299.jpg" style="width: 100px; height: 100px;">
+        <p>Location not found</p>
+    </div>
+
+    <div class="weather-box" id="weather-box">
+        <img src="" id="img">
+        <p class="temperature" id="temperature"></p>
+        <p class="description" id="description"></p>
+    </div>
+
+    <div class="weather-details" id="weather-details">
+        <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="text">
+                <span id="humidity"></span>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="wind-speed" >
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+                <span id="wind"></span>
+                <p>Wind Speed</p>
+            </div>
+        </div>
+    </div>
+    <div class="time">
+        <p id="time">{{local_time | date: 'EEEE, d MMM y'}}</p>
+    </div>
+</div>
