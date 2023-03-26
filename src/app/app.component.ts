@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, AfterViewChecked{
 
 
     search?.addEventListener('click', () =>{
-      const APIKey = 'ff435bf1835ffcc9b58c8fb432e6fefc';
+      const APIKey = '';
       const city = (<HTMLInputElement>document.getElementById('input')).value;
 
       if(city == ''){
