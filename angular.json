@@ -100,6 +100,9 @@
           "options": {
             "browserTarget": "Weather:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

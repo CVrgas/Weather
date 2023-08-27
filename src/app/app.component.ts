@@ -24,7 +24,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
 			if (city == "") {
 				return;
 			}
-			fetch(`https://cool-chimera-0a49d5.netlify.app/api/hello/${city}`)
+			fetch(`https://cool-chimera-0a49d5.netlify.app/api/weather/${city}`)
 				.then((response) => response.json())
 				.then((json) => {
 					if (json.cod == "404") {
