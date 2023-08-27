@@ -22,6 +22,7 @@ export class AppComponent implements OnInit, AfterViewChecked {
 		search?.addEventListener("click", () => {
 			const city = (<HTMLInputElement>document.getElementById("input")).value;
 
+<<<<<<< HEAD
 			if (city == "") {
 				return;
 			}
@@ -38,6 +39,11 @@ export class AppComponent implements OnInit, AfterViewChecked {
 					}
 					error404.style.display = "none";
 					error404.classList.remove("fadeIn");
+=======
+    search?.addEventListener('click', () =>{
+      const APIKey = '';
+      const city = (<HTMLInputElement>document.getElementById('input')).value;
+>>>>>>> ac75cbe921d85d40428875bb4e3dc30c11490f0a
 
 					const image = <HTMLImageElement>document.getElementById("img");
 					const temperature = document.getElementById("temperature");
